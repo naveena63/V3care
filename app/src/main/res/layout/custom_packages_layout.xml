@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:id="@+id/linearlayout"
+
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="@dimen/dimen_2dp"
+        app:cardMaxElevation="2dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="5sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_box" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="2dp">
+
+                <TextView
+                    android:id="@+id/pack_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/textview_padding"
+                    android:fontFamily="@font/poppins"
+                    android:text="Bathroom Deep Cleaning"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_13sp" />
+
+                <TextView
+                    android:id="@+id/package_slug"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/textview_padding"
+                    android:fontFamily="@font/poppins"
+                    android:text="Deep Cleaning Of Bathroom"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+                <Button
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:fontFamily="@font/poppins"
+                    android:text="description"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize_13sp"
+                    android:visibility="visible" />
+                <!--<EditText-->
+                <!--android:id="@+id/seater_selection"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/timeslot_background" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/price_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins"
+                    android:text="Rs.100"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSize_16sp" />
+
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/poppins"
+                    android:text="@string/add_to_cart"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize_13sp"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/decreaseInteger"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="decreaseInteger"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/integer_number"
+                    android:layout_width="30sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/increase"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:onClick="increaseInteger"
+                    android:text="+" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

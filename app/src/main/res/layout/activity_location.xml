@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/btn_start_location_updates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_50dp"
+            android:background="@drawable/button_background"
+            android:drawableRight="@drawable/ic_location_on_black_24dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:text="Get Current Location"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_18sp" />
+
+        <TextView
+            android:id="@+id/location_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/dimen_15dp"
+            android:fontFamily="@font/poppins_light"
+            android:textAlignment="center"
+            android:textColor="#333"
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:text="Add Location"
+            android:textColor="@color/colorPrimary"/>
+        <EditText
+            android:id="@+id/d_no_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:fontFamily="@font/poppins"
+            android:layout_margin="@dimen/margin_10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="D.No"/>
+        <EditText
+            android:id="@+id/land_mark_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:singleLine="true"
+            android:fontFamily="@font/poppins"
+            android:background="@drawable/edittext_bg"
+            android:hint="Land Mark"/>
+        <Button
+            android:id="@+id/locationSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_margin="@dimen/dimen_15dp"
+            android:padding="@dimen/dimen_5dp"
+            android:text="submit"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_18sp" />
+
+    </LinearLayout>
+
+
+
+    <!-- <android.support.v7.widget.Toolbar
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/toolbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="?attr/colorPrimaryDark"/>-->
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/ll1"
+         android:layout_marginTop="70dp"
+         android:layout_marginBottom="@dimen/margin_10dp"
+       >
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="5dp"
+             android:orientation="horizontal">
+             <AutoCompleteTextView
+                 android:id="@+id/autoCompleteTextView"
+                 android:layout_width="300dp"
+                 android:layout_height="wrap_content"
+                 android:hint=" Location"
+                 android:inputType="textAutoComplete"
+                 android:singleLine="true"
+                 android:textColorHint="#757373"
+                 android:fontFamily="@font/poppins"
+                 android:layout_margin="@dimen/margin_10dp"
+                 android:layout_marginTop="20dp"
+                 android:background="@drawable/edittext_bg"
+                 android:completionThreshold="3"/>
+
+             <ImageView
+                 android:id="@+id/ivLocation"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 android:src="@drawable/google_gps" />
+         </LinearLayout>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin_10dp"
+             android:text="Add Location"
+             android:textColor="@color/colorPrimary"/>
+         <EditText
+             android:id="@+id/d_no_editText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:singleLine="true"
+             android:fontFamily="@font/poppins"
+             android:layout_margin="@dimen/margin_10dp"
+             android:background="@drawable/edittext_bg"
+             android:hint="D.No"/>
+         <EditText
+             android:id="@+id/land_mark_editText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin_10dp"
+             android:singleLine="true"
+             android:fontFamily="@font/poppins"
+             android:background="@drawable/edittext_bg"
+             android:hint="Land Mark"/>
+
+         <EditText
+             android:id="@+id/BuyerName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin_10dp"
+             android:singleLine="true"
+             android:visibility="gone"
+             android:background="@drawable/edittext_bg"
+             android:hint="Buyer Name"/>
+         <EditText
+             android:id="@+id/purposeOfBuying"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="@dimen/margin_10dp"
+             android:singleLine="true"
+             android:visibility="gone"
+             android:background="@drawable/edittext_bg"
+             android:hint="Purpose of Buying"/>
+
+
+     </LinearLayout>
+ -->
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearlayout"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/onlinePayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:text="Online Payment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_18sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="@dimen/margin_10dp"
+            android:text="OR"
+            android:textColor="@color/red"
+            android:textSize="@dimen/textSize_18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Cod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5dp"
+            android:text="Pay After Service"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textSize_18sp" />
+
+    </LinearLayout>-->
+</RelativeLayout>

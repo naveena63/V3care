@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context="com.app.ashesha.v3care.Menu.ContactUsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dimen_50dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:paddingBottom="30dp"
+            android:text="Get In Touch"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/iconfinder_location_1055034"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:text="CompanyName:"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:id="@+id/company_mail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:text="Company_mail"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:id="@+id/company_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:text="CompanyPhoneNUm"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            /> <TextView
+            android:id="@+id/company_addres"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.ashesha.v3care.Menu.GenerateReferalCode">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/refer" />
+    <TextView
+        android:id="@+id/textView_rpoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_margin="40dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="You are eligible for earn rewards for referring v3Care to your friends."/>
+    <TextView
+        android:id="@+id/textview_refid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Send them your referral code (0000)."/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/button_invite"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/poppins"
+            android:text="Invite friends"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_16sp"
+            />
+    </RelativeLayout>
+</LinearLayout>

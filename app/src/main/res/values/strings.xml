@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">V3Care</string>
+    <string name="text_register">Already Have An Account? Login Here</string>
+    <string name="title_home">Home</string>
+    <string name="sbservices_text"> One call for all your project,Appartments  &amp; Home Cleaning Service needs</string>
+    <string name="quick_affrod_trust"> Quick &#8226; Affordable &#8226; Trusted</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_to_cart">Add</string>
+    <string name="profile">Profile</string>
+    <string name="update_profile">Edit Profile</string>
+    <string name="label_network_error_message">Network Error</string>
+    <string name="label_network_button_text">No internet connection !\\nPlease check your Internet Connection</string>
+    <string name="enter_valid_mail">enter valid email</string>
+    <string name="enter_name">enter name</string>
+    <string name="enter_password">enter password</string>
+    <string name="enter_valid_number">enter valid number</string>
+    <string name="error_invalid_mobile_number">invalid mobile number</string>
+    <string name="price_symbl">Rs</string>
+    <string name="label_no_packages_available">no packages available</string>
+    <string name="select_package">select package</string>
+    <string name="time_date">Time and Date</string>
+    <string name="location">Location</string>
+    <string name="cart_page">Cart</string>
+    <string name="earn">Credit Points</string>
+
+    <string name="payment_options">Select Payment Method</string>
+    <!-- // <string name="select_package">select package</string>//-->
+    <string name="my_account">MyAccount</string>
+    <string name="my_orders">MyOrders</string>
+    <string name="edittext_phone"><font size="10">Phone Number</font></string>
+    <string name="address">V3Care\nBangolre\n</string>
+
+
+    <string name="facebook_app_id">328036911189491</string>
+    <string name="fb_login_protocol_scheme">fb328036911189491</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="imgdesc">imgdesc</string>
+
+    <string name="time_slot_one">7Am-9Am</string>
+    <string name="terms_conditions">1.In order to use the Service, you must first agree to the Terms. You may not use the Service if you do not accept the Terms.\n2.You can accept the Terms by clicking to accept or agree to the Terms, where this option is made available to you by Google.\n
+3.You may not use the Service and may not accept the Terms if you are not of legal age to form a binding contract with Google.
+
+
+</string>
+    <string name="rating">How likely are you to recommend SB Services App </string>
+    <string name="notifictaion">Notifications</string>
+    <string name="loading">loading</string>
+
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+</resources>
